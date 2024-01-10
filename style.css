@@ -17,10 +17,6 @@ main {
 .height {
   height: 100%;
 }
-/******************************************** KONSTANTER ********************************************/
-/* .html {
-  --brun: #49220c;
-} */
 
 /******************************************** BILLEDER ********************************************/
 img {
@@ -238,18 +234,6 @@ p {
 }
 
 /******************************************** KNAPPER ********************************************/
-/* .cirkel {
-  clip-path: circle(40%);
-  background-image: linear-gradient(to bottom, #b0c9d9 0%, #a4b5bf 25%, #f2ceae 50%, #d9cac1 75%, #bfbcba 100%);
-} */
-/* .opgavelink {
-  width: 59%;
-  align-self: center;
-  justify-self: center;
-} */
-/* .knap {
-  position: relative;
-} */
 .knap {
   margin-top: 50px;
   display: flex;
@@ -263,9 +247,6 @@ p {
   left: 20%;
 }
 
-/* @media (max-width: 800px) {
-  
-} */
 /******************************************** FORSIDE ********************************************/
 .portfolio_forside {
   padding-right: 60px;
@@ -311,6 +292,7 @@ p {
     opacity: 1;
   }
 }
+
 /******************************************** LINKS ********************************************/
 a {
   text-decoration: none;
@@ -320,6 +302,34 @@ p a,
   text-decoration: underline;
   color: #49220c;
   font-weight: 700;
+}
+
+/******************************************** GENERELT ********************************************/
+.flex_col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+.flex_col h1 {
+  padding-bottom: 0;
+  margin-bottom: 50px;
+}
+.grid_1_1 {
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+/******************************************** LUFT ********************************************/
+/* Brugt i UX/UI */
+.luft_2 {
+  margin-bottom: 85px;
+}
+
+/* Brugt i animation */
+.luft_5 {
+  margin-bottom: 100px;
 }
 
 /******************************************** PORTFOLIO ********************************************/
@@ -354,74 +364,14 @@ p a,
 }
 
 /******************************************** WEB ********************************************/
-.flex_col {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 100px;
-}
 .computer,
 .controller {
   width: 22%;
 }
-.flex_col h1 {
-  padding-bottom: 0;
-  margin-bottom: 50px;
-}
-
-.grid_1_1 {
-  margin-left: 65px;
-  margin-right: 65px;
-}
-
 .billede_tekst {
-  /* padding-left: 0px;
-    padding-right: 161px; */
   text-align: center;
   align-self: center;
 }
-/* .grid_tekst {
-    margin-left: 128px;
-    margin-top: 16px;
-  } */
-/* .grid_defineret {
-  width: 46%;
-  position: relative;
-  top: 55%;
-    left: 47%;
-    z-index: 1;
-} */
-
-/**** .grid_defineret {
-  width: 53%;
-  position: relative;
-  top: 33%;
-  left: 47%;
-} */
-/* .grid_placering {
-  width: 36%;
-  position: relative;
-  left: 15%;
-    bottom: 16%;
-} */
-
-/**** .grid_placering {
-  width: 44%;
-  position: relative;
-  left: 15%;
-  bottom: 16%;
-} */
-
-/* .galleri {
-  width: 70%; */
-/* padding-bottom: 0px;
-    margin-left: 81px;
-} */
-/* .luft {
-    margin-bottom: 80px;
-    margin-top: 0px;
-  } */
 
 /******************************************** UX/UI ********************************************/
 .paere_2 {
@@ -454,17 +404,6 @@ p a,
   margin-top: 100px;
   margin-bottom: 70px;
 }
-.luft_2 {
-  margin-bottom: 85px;
-}
-
-/******************************************** ANIMATION ********************************************/
-/* .cirkel {
-  background-image: url(svg/Opgavelink.svg);
-} */
-.luft_5 {
-  margin-bottom: 100px;
-}
 
 /******************************************** INDHOLD ********************************************/
 .kamera_placering {
@@ -473,17 +412,11 @@ p a,
   top: 5%;
   left: 65%;
 }
-/******************************************** OM MIG ********************************************/
-.om_mig_luft {
-  margin-top: 29px;
-  margin-bottom: 85px;
-}
 
+/******************************************** OM MIG ********************************************/
 .facts li {
   list-style: none;
   display: flex;
-  /* justify-content: start;
-  align-items: center; */
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -506,6 +439,10 @@ p a,
 .facts_tekst {
   margin-left: 12px;
 }
+.om_mig_luft {
+  margin-top: 29px;
+  margin-bottom: 85px;
+}
 .portraet_luft {
   margin-top: 60px;
 }
@@ -526,8 +463,40 @@ p a,
     max-width: 70ch;
   }
 
+  /***** KNAP *****/
   .lille_knap {
     width: 40%;
+  }
+
+  /***** GENERELT *****/
+  .grid_2_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .grid_1_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .order {
+    order: 1;
+  }
+
+  /***** LUFT *****/
+  /* Brugt i web */
+  .luft {
+    margin: 0 15px 80px 15px;
+  }
+  /* Brugt i indhold */
+  .luft_3 {
+    margin-top: 135px;
+  }
+  /* Brugt i animation */
+  .luft_4 {
+    margin-left: 70px;
+    margin-right: 0px;
+    margin-top: 152px;
+    padding-right: 72px;
   }
 
   /***** FORSIDE *****/
@@ -538,11 +507,6 @@ p a,
     padding-top: 20px;
   }
   /***** PORTFOLIO *****/
-  .grid_2_2 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
   .web_ikon {
     display: grid;
     grid-column: 1;
@@ -579,10 +543,6 @@ p a,
     width: 70%;
     height: auto;
   }
-  .paaere {
-    width: 47%;
-    height: auto;
-  }
   .kamera {
     width: 72%;
   }
@@ -590,18 +550,13 @@ p a,
     padding: 0 30px 30px 30px;
     margin-top: 0px;
   }
+
   /***** WEB *****/
-  .grid_1_1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
   .semantisk {
     width: 75%;
     margin-left: 128px;
   }
   .billede_tekst {
-    /* padding-left: 150px;
-  padding-right: 150px; */
     padding-left: 0px;
     padding-right: 161px;
     text-align: center;
@@ -629,12 +584,7 @@ p a,
     padding-bottom: 0px;
     margin-left: 81px;
   }
-  .luft {
-    margin: 0 15px 80px 15px;
-  }
-  .order {
-    order: 1;
-  }
+
   /***** UX/UI *****/
   .taenke_hoejt {
     width: 70%;
@@ -667,14 +617,10 @@ p a,
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 33px;
+    margin-left: -29px;
   }
   /***** ANIMATION *****/
   .spil {
-    /* align-self: center;
-    position: relative;
-    left: 10%;
-    z-index: 1; */
     position: relative;
     width: 85%;
     top: 11%;
@@ -698,18 +644,6 @@ p a,
     rotate: 24deg;
     top: 6%;
   }
-  .cirkel2_placering {
-    position: relative;
-    width: 97%;
-    left: 141%;
-    top: -129%;
-  }
-  .luft_4 {
-    margin-left: 70px;
-    margin-right: 0px;
-    margin-top: 152px;
-    padding-right: 72px;
-  }
   .animation {
     position: relative;
     left: 15%;
@@ -722,10 +656,8 @@ p a,
     width: 100%;
     padding-right: 0px;
   }
-  .spil
 
   /***** INDHOLD *****/
-  
   .videosite_tekst {
     padding-left: 83px;
     padding-right: 100px;
@@ -754,9 +686,6 @@ p a,
   .videosite_forside img {
     width: 88%;
   }
-  .luft_3 {
-    margin-top: 135px;
-  }
   .test_1 {
     width: 62%;
   }
@@ -770,13 +699,13 @@ p a,
     width: 67%;
     margin-top: 20px;
   }
-
   .eventlistener_tekst {
     margin-left: 156px;
   }
   .eventlistener {
     margin-right: 84px;
   }
+
   /***** OM MIG *****/
   .om_mig_luft_2 {
     padding-top: 197px;
@@ -785,21 +714,25 @@ p a,
 
 /******************************************** MOBIL ********************************************/
 @media (max-width: 800px) {
+  /***** TEKST *****/
   .centreret_mobil {
     text-align: center;
     padding-left: 40px;
     padding-right: 40px;
   }
+
   /***** FORSIDE *****/
   .menu_forside {
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
   }
+
   /***** PORTFOLIO *****/
   .paere_mobil {
     width: 47%;
   }
+
   /***** KNAPPER *****/
   .knap_tekst {
     bottom: 39%;
@@ -817,13 +750,11 @@ p a,
     bottom: 36%;
     left: 8%;
   }
+
   /***** WEB *****/
   .order_2 {
     order: -1;
   }
-  /* .grid img {
-    width: 65%;
-  } */
   .grid {
     display: grid;
     gap: 20px;
@@ -831,6 +762,7 @@ p a,
     margin-top: 20px;
     margin-bottom: 50px;
   }
+
   /***** UX/UI *****/
   .praesentation1_mobil {
     width: 100%;
@@ -853,10 +785,8 @@ p a,
     gap: 60px;
     margin: 80px 40px 80px 40px;
   }
+
   /***** ANIMATION *****/
-  .cirkel2_placering {
-    display: none;
-  }
   .spil_luft {
     margin-bottom: 95px;
   }
@@ -876,23 +806,7 @@ p a,
     bottom: 16%;
     top: 78%;
   }
-  /* .spil {
-    animation-name: pulse_kf;
-    animation-duration: 1s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    margin-bottom: 70px;
-    margin-top: 70px;
-  }
-  @keyframes pulse_kf {
-    0% {
-      scale: 1.1;
-    }
-    100% {
-      scale: 1.2;
-    }
-  } */
+
   /***** INDHOLD *****/
   .kamera_2 {
     width: 40%;
