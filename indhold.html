@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
     <title>Indhold</title>
 
     <link rel="stylesheet" href="style.css">
@@ -33,16 +39,18 @@
         </nav>
     </header>
     <main>
-        <a href="portfolio.html">
-            <h4>Tilbage til portfolio</h4>
-        </a>
+        <div class="tilbage">
+            <a href="portfolio.html">
+                <h4>Tilbage til portfolio</h4>
+            </a>
+        </div>
         <div class="flex_col">
             <h1>Grundlæggende indhold </h1>
             <div class="grid_1_1">
-                <div>
+                <div class="paere_2_placering">
                     <img src="svg/kamera.svg" alt="Kamera" class="paere_2">
                 </div>
-                <div class="centreret_2">
+                <div class="centreret_2 centreret_indhold">
                     <p>I tema 5 fik jeg en grundlæggende forståelse for videoproduktion, samt at implementere det
                         færdige videomateriale i
                         HTML.</p>
@@ -77,62 +85,112 @@
                     andre medstuderende om
                     en opgave.</p>
             </div>
-            <div class="opgavelink">
-                <div>
-                    <img src="webP/videosite.webp" alt="videosite">
+            <div class="centreret_2">
+                <div class="knap">
+                    <a href="https://frkj0002.github.io/videosite/index.html" target="_blank">
+                        <img src="svg/knap.svg" alt="knap">
+                    </a>
                 </div>
-                <a href="https://frkj0002.github.io/videosite/index.html" target="_blank">
-                    <img src="svg/Opgavelink.svg" alt="Opgavelink">
-                </a>
             </div>
         </div>
         <div>
-            <div class="opdeling">
-                <img src="svg/kamera.svg" alt="paere" class="paere_2">
-            </div>
-            <div class="grid_1_1">
-                <div>
-                    <h2>05.02.01 Virksomhedssite</h2>
-                    <p>Denne opgave lavede jeg i samarbejde med tre medstuderende. Målet med opgaven var at lave et
-                        redsign af en eksisterende
-                        virksomheds website samt at præsentere vores arbejde for andre medstuderende og en lærer.</p>
-                    <p>Vi startede med at researche på vores valgte virksomheds nuværende website. Dette gjorde vi
-                        blandt andet ved en
-                        5-sekunders test, hvor vi kunne konkludere, at det er svært at tyde hvad virksomheden står for
-                        samt hvad formålet med
-                        websitet er. Derfor havde vi særligt fokus på dette i udarbejdelsen af vores redesign. Som en
-                        del af researchfasen interviewede vi også et par fodboldtrænere, da vi var kommet frem
-                        til, at fodboldtrænere
-                        skulle være målgruppen for vores redesign. Dette havde vi særligt i mente da vi planlagde og
-                        producerede videomateriale
-                        til websitet.</p>
-                    <p>I temaets tidligere opgave 05.01.01 VIDEOSITE blev vi, som nævnt, bekendt med vigtigheden af, at
-                        lave en grundig
-                        forberedelse før optagelserne skulle laves. Derfor tog vi først en snak med stifterne af
-                        virksomheden, hvorefter vi
-                        lavede et udførligt storyboard, så vi var sikre på at få de rigtige optagelser og billeder med
-                        hjem. Vi lavede videooptagelserne på en fodboldbane en vintereftermiddag, hvilket skabte en del
-                        udfordringer med lyset, fordi
-                        det ændrede sig meget hurtigt. Dette problem løste vi ved hjælp af colorgrading i Premiere Pro,
-                        hvor vi ændrede på
-                        farverne, så alle klippene fik et mere ensartet udtryk.</p>
-                    <p>Denne opgave var det første store gruppeprojekt på semesteret. Vi samarbejdede ved at bruge
-                        SCRUM, særligt Daily SCRUM,
-                        og Trello board. Desuden udfyldte vi i starten af temaet en teamkontrakt, hvori vi klarlagde
-                        vores forventninger til
-                        hinanden og til samarbejdet.
-                        Vi blev også introduceret til GitHub, som gjorde det muligt for os at samarbejde om kodningen i
-                        VSCode.</p>
-                    <p>Den sidste del af opgaven var at præsentere og dokumentere vores arbejdsproces med udviklingen af
-                        redesignet.
-                        Efterfølgende fik vi feedback fra nogle medstuderende, som vurderede vores website ved hjælp af
-                        en heuristisk
-                        evaluering.</p>
+            <img src="svg/streg_lang.svg" alt="streg_lang" class="streg">
+            <div class="flex_col">
+                <div class="videosite_tekst videosite_luft centreret_mobil">
+                    <p>Jeg implementerede videoen på mit videosite, på to forskellige måder. Øverst ved hjælp af
+                        video-tag, og nederst ved hjælp af HTML-tagget 'iframe', hvor jeg hentede videoen ind med et
+                        youtube-link.</p>
                 </div>
-                <div class="opgavelink">
+                <div class="grid_1_1 videosite_grid">
+                    <div class="videosite_mobil"><img src="webP/video_html.webp" alt="video_html"></div>
+                    <div class="videosite_forside videosite_mobil"><img src="webP/videosite.webp" alt="videosite"></div>
+                </div>
+            </div>
+
+            <img src="svg/streg_lang.svg" alt="streg_lang" class="streg">
+        </div>
+        <div class="grid_1_1">
+            <div class="order luft_3">
+                <div class="praesentation1 praesentation1_mobil">
+                    <img src="webP/redesign.webp" alt="redesign">
+                </div>
+                <div class="kamera_placering praesentation2_mobil kamera_2_placering">
+                    <img src="svg/kamera.svg" alt="kamera" class="kamera_2">
+                </div>
+            </div>
+            <div>
+                <h2>05.02.01 Virksomhedssite</h2>
+                <p>Denne opgave lavede jeg i samarbejde med tre medstuderende. Målet med opgaven var at lave et
+                    redesign af en eksisterende
+                    virksomheds website samt at præsentere vores arbejde for andre medstuderende og en lærer.</p>
+                <p>Vi startede med at researche på vores valgte virksomheds nuværende website. Dette gjorde vi
+                    blandt andet ved en
+                    5-sekunders test, hvor vi kunne konkludere, at det er svært at tyde hvad virksomheden står for
+                    samt hvad formålet med
+                    websitet er. Derfor havde vi særligt fokus på dette i udarbejdelsen af vores redesign. Som en
+                    del af researchfasen interviewede vi også et par fodboldtrænere, da vi var kommet frem
+                    til, at fodboldtrænere
+                    skulle være målgruppen for vores redesign. Dette havde vi særligt i mente da vi planlagde og
+                    producerede videomateriale
+                    til websitet.</p>
+                <p>I temaets tidligere opgave 05.01.01 VIDEOSITE blev vi, som nævnt, bekendt med vigtigheden af, at
+                    lave en grundig
+                    forberedelse før optagelserne skulle laves. Derfor tog vi først en snak med stifterne af
+                    virksomheden, hvorefter vi
+                    lavede et udførligt storyboard, så vi var sikre på at få de rigtige optagelser og billeder med
+                    hjem. Vi lavede videooptagelserne på en fodboldbane en vintereftermiddag, hvilket skabte en del
+                    udfordringer med lyset, fordi
+                    det ændrede sig meget hurtigt. Dette problem løste vi ved hjælp af colorgrading i Premiere Pro,
+                    hvor vi ændrede på
+                    farverne, så alle klippene fik et mere ensartet udtryk.</p>
+                <p>Denne opgave var det første store gruppeprojekt på semesteret. Vi samarbejdede ved at bruge
+                    SCRUM, særligt Daily SCRUM,
+                    og Trello board. Desuden udfyldte vi i starten af temaet en teamkontrakt, hvori vi klarlagde
+                    vores forventninger til
+                    hinanden og til samarbejdet.
+                    Vi blev også introduceret til GitHub, som gjorde det muligt for os at samarbejde om kodningen i
+                    VSCode.</p>
+                <p>Den sidste del af opgaven var at præsentere og dokumentere vores arbejdsproces med udviklingen af
+                    redesignet.
+                    Efterfølgende fik vi feedback fra nogle medstuderende, som vurderede vores website ved hjælp af
+                    en heuristisk
+                    evaluering.</p>
+                <div class="knap lille_knap">
                     <a href="https://frederikkegad.dk/kea/05_indhold/redesign/" target="_blank">
-                        <img src="svg/Opgavelink.svg" alt="Opgavelink">
+                        <img src="svg/knap.svg" alt="knap">
                     </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="svg/streg_lang.svg" alt="streg_lang" class="streg">
+            <div class="grid_1_1">
+                <div class="flex_col">
+                    <div class="test_1">
+                        <p>5-sekunders test på virksomhedens nuværende website:</p>
+                    </div>
+                    <div class="test_1_billede">
+                        <img src="webP/fem_sek_test_1.webp" alt="test">
+                    </div>
+                </div>
+                <div class="flex_col">
+                    <div class="test_2">
+                        <p>5-sekunders test på vores redesign:</p>
+                    </div>
+                    <div class="test_2_billede">
+                        <img src="webP/fem_sek_test_2.webp" alt="test">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="svg/streg_lang.svg" alt="streg_lang" class="streg">
+            <div class="grid_1_1 luft_2">
+                <div class="billede_tekst order">
+                    <p>Her ses storyboardet, som vi lavede før optagelserne.</p>
+                </div>
+                <div class="semantisk grid">
+                    <img src="webP/storyboard.webp" alt="storyboard">
                 </div>
             </div>
         </div>

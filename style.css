@@ -146,7 +146,7 @@ nav li {
     background-image: linear-gradient(to bottom, #b0c9d9 0%, #a4b5bf 25%, #f2ceae 50%, #d9cac1 75%, #bfbcba 100%);
     position: absolute;
     left: 0;
-    top: 85px;
+    top: 75px;
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -177,7 +177,7 @@ nav li {
 /******************************************** TEKST ********************************************/
 h1 {
   font-family: "Kristi", cursive;
-  font-size: 8cqw;
+  font-size: 5rem;
   color: #49220c;
   text-align: center;
   padding-bottom: 40px;
@@ -186,7 +186,7 @@ h1 {
 }
 h2 {
   font-family: "Source Serif 4", serif;
-  font-size: 3cqw;
+  font-size: 2rem;
   color: #49220c;
 }
 h3 {
@@ -197,7 +197,7 @@ h3 {
 }
 h4 {
   font-family: "Source Serif 4", serif;
-  font-size: 2cqw;
+  font-size: 0.9rem;
   color: #49220c;
   font-weight: 400;
   margin-bottom: 0;
@@ -242,11 +242,11 @@ p {
   clip-path: circle(40%);
   background-image: linear-gradient(to bottom, #b0c9d9 0%, #a4b5bf 25%, #f2ceae 50%, #d9cac1 75%, #bfbcba 100%);
 } */
-.opgavelink {
+/* .opgavelink {
   width: 59%;
   align-self: center;
   justify-self: center;
-}
+} */
 /* .knap {
   position: relative;
 } */
@@ -281,7 +281,7 @@ p {
   justify-content: center;
   align-items: center;
   position: relative;
-  top: 15%;
+  top: 22%;
   left: 8%;
 }
 .logo img {
@@ -327,9 +327,12 @@ p a,
   width: 50%;
   height: auto;
 }
-.paaere {
-  width: 40%;
+.paere {
+  width: 56%;
   height: auto;
+}
+.kamera_ikon {
+  width: 55%;
 }
 .grid_2_2 {
   display: grid;
@@ -437,7 +440,7 @@ p a,
 .praesentation2 {
   position: relative;
   width: 60%;
-  top: 5%;
+  top: 4%;
   left: 35%;
 }
 .opdeling {
@@ -456,14 +459,26 @@ p a,
 }
 
 /******************************************** ANIMATION ********************************************/
+/* .cirkel {
+  background-image: url(svg/Opgavelink.svg);
+} */
+.luft_5 {
+  margin-bottom: 100px;
+}
 
 /******************************************** INDHOLD ********************************************/
-
+.kamera_placering {
+  position: relative;
+  width: 54%;
+  top: 5%;
+  left: 65%;
+}
 /******************************************** OM MIG ********************************************/
 .om_mig_luft {
-  margin-top: 110px;
+  margin-top: 29px;
   margin-bottom: 85px;
 }
+
 .facts li {
   list-style: none;
   display: flex;
@@ -496,6 +511,13 @@ p a,
 }
 .erfaring_luft {
   margin-top: 75px;
+}
+.flex_col_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 35px;
 }
 /******************************************** DESKTOP ********************************************/
 @media (min-width: 800px) {
@@ -558,8 +580,11 @@ p a,
     height: auto;
   }
   .paaere {
-    width: 53%;
+    width: 47%;
     height: auto;
+  }
+  .kamera {
+    width: 72%;
   }
   .centreret {
     padding: 0 30px 30px 30px;
@@ -644,18 +669,136 @@ p a,
     align-items: center;
     margin-left: 33px;
   }
+  /***** ANIMATION *****/
+  .spil {
+    /* align-self: center;
+    position: relative;
+    left: 10%;
+    z-index: 1; */
+    position: relative;
+    width: 85%;
+    top: 11%;
+    left: 11%;
+  }
+  .spil img {
+    width: 88%;
+  }
+  .chokolade {
+    position: relative;
+    width: 19%;
+    top: 10%;
+    left: 33%;
+    rotate: -16deg;
+  }
+  .egg {
+    position: relative;
+    width: 21%;
+    left: 55%;
+    bottom: 0%;
+    rotate: 24deg;
+    top: 6%;
+  }
+  .cirkel2_placering {
+    position: relative;
+    width: 97%;
+    left: 141%;
+    top: -129%;
+  }
+  .luft_4 {
+    margin-left: 70px;
+    margin-right: 0px;
+    margin-top: 152px;
+    padding-right: 72px;
+  }
+  .animation {
+    position: relative;
+    left: 15%;
+    width: 90%;
+  }
+  .classlist {
+    position: relative;
+    left: 92%;
+    bottom: 79%;
+    width: 100%;
+    padding-right: 0px;
+  }
+  .spil
+
+  /***** INDHOLD *****/
+  
+  .videosite_tekst {
+    padding-left: 83px;
+    padding-right: 100px;
+  }
+  .videosite_luft {
+    padding-bottom: 40px;
+  }
+  .videosite_placering {
+    width: 90%;
+    position: relative;
+    left: 15%;
+    bottom: 16%;
+  }
+  .videosite_kodning {
+    width: 100%;
+    position: relative;
+    top: -22%;
+    left: 47%;
+    z-index: 1;
+  }
+  .videosite_grid {
+    gap: 30px;
+    margin-left: 136px;
+    margin-right: 80px;
+  }
+  .videosite_forside img {
+    width: 88%;
+  }
+  .luft_3 {
+    margin-top: 135px;
+  }
+  .test_1 {
+    width: 62%;
+  }
+  .test_1_billede {
+    width: 64%;
+  }
+  .test_2 {
+    width: 66%;
+  }
+  .test_2_billede {
+    width: 67%;
+    margin-top: 20px;
+  }
+
+  .eventlistener_tekst {
+    margin-left: 156px;
+  }
+  .eventlistener {
+    margin-right: 84px;
+  }
+  /***** OM MIG *****/
+  .om_mig_luft_2 {
+    padding-top: 197px;
+  }
 }
 
 /******************************************** MOBIL ********************************************/
 @media (max-width: 800px) {
   .centreret_mobil {
     text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   /***** FORSIDE *****/
   .menu_forside {
     display: flex;
     justify-content: space-evenly;
     padding-top: 20px;
+  }
+  /***** PORTFOLIO *****/
+  .paere_mobil {
+    width: 47%;
   }
   /***** KNAPPER *****/
   .knap_tekst {
@@ -709,5 +852,60 @@ p a,
     align-items: center;
     gap: 60px;
     margin: 80px 40px 80px 40px;
+  }
+  /***** ANIMATION *****/
+  .cirkel2_placering {
+    display: none;
+  }
+  .spil_luft {
+    margin-bottom: 95px;
+  }
+  .chokolade_mobil {
+    position: absolute;
+    width: 20%;
+    margin-bottom: 30px;
+    top: 77%;
+    left: 0;
+    rotate: -22deg;
+  }
+  .egg_mobil {
+    width: 20%;
+    position: absolute;
+    left: 75%;
+    rotate: 16deg;
+    bottom: 16%;
+    top: 78%;
+  }
+  /* .spil {
+    animation-name: pulse_kf;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-bottom: 70px;
+    margin-top: 70px;
+  }
+  @keyframes pulse_kf {
+    0% {
+      scale: 1.1;
+    }
+    100% {
+      scale: 1.2;
+    }
+  } */
+  /***** INDHOLD *****/
+  .kamera_2 {
+    width: 40%;
+  }
+  .kamera_2_placering {
+    display: flex;
+    justify-content: center;
+  }
+  .centreret_indhold {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .videosite_mobil {
+    margin-top: 15px;
   }
 }
